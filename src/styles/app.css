@@ -11,9 +11,6 @@
 @import 'tailwindcss/theme';
 @import 'tailwindcss/utilities';
 
-/* custom styles */
-@import './overrides.css' layer(overrides);
-
 @layer reset {
 	/* reset */
 	*,
