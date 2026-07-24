@@ -6,7 +6,7 @@
 
 <label class="genre-filter-label">
 	<span class="sr-only">Filter by genre</span>
-	<select class="genre-select" bind:value>
+	<select id="genre-filter" name="genre-filter" class="genre-select" bind:value>
 		<button>
 			<selectedcontent></selectedcontent>
 		</button>

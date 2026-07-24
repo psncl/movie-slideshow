@@ -6,7 +6,7 @@
 
 <div class="grid w-full max-w-5xl grid-cols-2 gap-5 md:grid-cols-4">
 	{#each movies as movie (movie.id)}
-		{@const matches = genreFilter === '' || movie.genres.includes(genreFilter)}
+		{const matches = $derived(genreFilter === '' || movie.genres.includes(genreFilter))}
 		<div
 			class="flex flex-col overflow-hidden rounded-xl border border-white/10 bg-white/5 transition-all duration-500"
 			class:opacity-30={!matches}

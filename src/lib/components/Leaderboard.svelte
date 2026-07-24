@@ -29,7 +29,7 @@
 	<Transition {transitions}>
 		<div class="flex w-full flex-col gap-3">
 			{#each board as movie (movie.id)}
-				{@const rank = rankOf(movie)}
+				{const rank = rankOf(movie)}
 				<Transition
 					class="flex items-center gap-4 rounded-xl border border-white/10 bg-white/5 px-6 py-3"
 					entry="rotate"
