@@ -1,0 +1,10 @@
+{
+  "enabledMcpjsonServers": [
+    "svelte"
+  ],
+  "permissions": {
+    "allow": [
+      "mcp__plugin_svelte_svelte__svelte-autofixer"
+    ]
+  }
+}
