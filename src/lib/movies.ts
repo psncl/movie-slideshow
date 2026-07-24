@@ -3,7 +3,8 @@ export type Movie = {
   title: string;
   director: string;
   imdbId: string;
-	genres: string[];
+  genres: string[];
+	poster? : string
 	rating: number; // out of 10
 	runtime: number; // minutes
 	colors: [string, string]; // gradient stops standing in for a poster
@@ -14,7 +15,8 @@ export const movies: Movie[] = [
 		id: 'the-odyssey',
     title: 'The Odyssey',
     director: 'Christopher Nolan',
-		imdbId: '33764258',
+    imdbId: '33764258',
+		poster: 'https://res.cloudinary.com/db9gbxhad/image/upload/v1784936891/33764258_wyj4tm.jpg',
 		genres: ['Adventure','Drama','Fantasy','Romance'],
 		rating: 8.5,
 		runtime: 173,
@@ -24,7 +26,8 @@ export const movies: Movie[] = [
 		id: 'the-invite',
 		title: 'The Invite',
 		director: 'Olivia Wilde',
-		imdbId: '14173636',
+    imdbId: '14173636',
+		poster: 'https://res.cloudinary.com/db9gbxhad/image/upload/v1784936892/14173636_dqwmfu.jpg',
 		genres: ['Comedy', 'Drama'],
 		rating: 6.2,
 		runtime: 107,
@@ -34,7 +37,8 @@ export const movies: Movie[] = [
 		id: 'toy-story-5',
 		title: 'Toy Story 5',
 		director: 'Andrew Stanton',
-		imdbId: '29355505',
+    imdbId: '29355505',
+		poster: 'https://res.cloudinary.com/db9gbxhad/image/upload/v1784936890/29355505_jhjgb0.jpg',
 		genres: ['Animation', 'Adventure', 'Comedy'],
 		rating: 7.4,
 		runtime: 102,
@@ -44,7 +48,8 @@ export const movies: Movie[] = [
 		id: 'moana',
 		title: 'Moana',
 		director: 'Thomas Kail',
-		imdbId: '27419466',
+    imdbId: '27419466',
+		poster: 'https://res.cloudinary.com/db9gbxhad/image/upload/v1784936890/27419466_govbnr.jpg',
 		genres: ['Action', 'Adventure', 'Comedy'],
 		rating: 5.6,
 		runtime: 115,
@@ -54,7 +59,8 @@ export const movies: Movie[] = [
 		id: 'minions-and-monsters',
 		title: 'Minions & Monsters',
 		director: 'Pierre Coffin',
-		imdbId: '32890033',
+    imdbId: '32890033',
+		poster: 'https://res.cloudinary.com/db9gbxhad/image/upload/v1784936889/32890033_n9hjjj.jpg',
 		genres: ['Animation', 'Adventure', 'Comedy'],
 		rating: 6.5,
 		runtime: 89,
