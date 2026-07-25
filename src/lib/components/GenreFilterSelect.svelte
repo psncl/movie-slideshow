@@ -18,7 +18,7 @@
 	<span class="sr-only">Filter by genre</span>
 	<select id="genre-filter" name="genre-filter" class="genre-select" bind:value>
 		<button>
-			<selectedcontent></selectedcontent>
+			<selectedcontent class="flex items-center"></selectedcontent>
 		</button>
 		<option value="">All Genres</option>
 		{#each genres as genre (genre)}
