@@ -95,15 +95,18 @@
 				</svg>
 			</a>
 
-			<div class="h-6 flex-1 overflow-hidden rounded-full bg-white/10">
+			<span class="w-14 shrink-0 text-lg tabular-nums">{movie.rating.toFixed(1)}</span>
+			<div
+				class="h-6 flex-1 overflow-hidden border border-white/15"
+				style:background="repeating-linear-gradient(45deg, rgba(255,255,255,0.1) 0 4px, transparent 4px 8px)"
+			>
 				<div
-					class="h-full rounded-full"
+					class="h-full"
 					style:width="{fill.width}%"
-					style:background={ratingColor(movie.rating)}
+					style:background="repeating-linear-gradient(45deg, {ratingColor(movie.rating)} 0 4px, oklch(0% 0 0 / 20%) 4px 8px)"
 					style:box-shadow="0 0 12px {ratingColor(movie.rating)}"
 				></div>
 			</div>
-			<span class="w-14 shrink-0 text-right text-lg tabular-nums">{movie.rating.toFixed(1)}</span>
 		</div>
 	</div>
 </div>

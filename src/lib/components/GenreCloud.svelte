@@ -22,7 +22,7 @@
 </script>
 
 <div class="flex w-full max-w-4xl flex-col items-center gap-10">
-	<p class="text-4xl font-bold drop-shadow-sm">🏷️ Genre Cloud</p>
+	<p class="text-4xl font-bold drop-shadow-sm uppercase">🏷️ Genre Cloud</p>
 
 	<div class="flex flex-wrap justify-center gap-x-6 gap-y-3">
 		{#each genres as genre, i (genre)}
