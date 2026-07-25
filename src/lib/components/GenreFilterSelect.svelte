@@ -2,6 +2,16 @@
 	import { genres } from '$lib/movies';
 
 	let { value = $bindable('') } = $props();
+
+	const genreIcons: Record<string, string> = {
+		Action: '/icons/icons8-action-50.png',
+		Adventure: '/icons/icons8-adventure-50.png',
+		Animation: '/icons/icons8-animation-50.png',
+		Comedy: '/icons/icons8-comedy-50.png',
+		Drama: '/icons/icons8-drama-50.png',
+		Fantasy: '/icons/icons8-fantasy-50.png',
+		Romance: '/icons/icons8-romance-48.png'
+	};
 </script>
 
 <label class="genre-filter-label">
@@ -12,7 +22,10 @@
 		</button>
 		<option value="">All Genres</option>
 		{#each genres as genre (genre)}
-			<option value={genre}>{genre}</option>
+			<option value={genre}>
+				<span class="genre-icon" style="--icon-src: url({genreIcons[genre]})"></span>
+				{genre}
+			</option>
 		{/each}
 	</select>
 </label>
@@ -94,9 +107,29 @@
 	}
 
 	.genre-select option {
-		padding: 0.5rem 0.75rem;
+		display: flex;
+		align-items: center;
+		gap: 0.6rem;
+		padding: 0.75rem 1rem;
+		font-size: 1.05rem;
 		border-radius: 0.5rem;
 		color: oklch(95% 0.02 272);
+	}
+
+	.genre-icon {
+		display: inline-block;
+		width: 1.25rem;
+		height: 1.25rem;
+		margin-right: 2rem;
+		background-color: oklch(90% 0.14 95);
+		-webkit-mask-image: var(--icon-src);
+		mask-image: var(--icon-src);
+		-webkit-mask-size: contain;
+		mask-size: contain;
+		-webkit-mask-repeat: no-repeat;
+		mask-repeat: no-repeat;
+		-webkit-mask-position: center;
+		mask-position: center;
 	}
 
 	.genre-select option:hover {
